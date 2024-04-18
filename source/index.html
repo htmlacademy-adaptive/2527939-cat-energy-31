@@ -1,13 +1,217 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-  </body>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Кэт энерджи</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="styles/styles.css">
+	<script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+	<header class="main__header">
+		<a class="main-header__logo logo" href="#">
+			<img lass="main-header__logo-image" src="#" alt="лого" width="202" height="59">
+			<img lass="main-header__logo-text" src="#" alt="CAT ENERGY" width="118" height="21">
+		</a>
+		<nav class="main-nav">
+			<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item site-list__item--active">
+						<a href="index.html">
+							главная
+						</a>
+					</li>
+					<li class="site-list__item">
+						<a href="catalog.html">
+							каталог продукции
+						</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#">
+							подбор программы
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<h1 class="main__title">Функциональное
+			питание для котов</h1>
+		<p class="main__slogan">Занялся собой? Займись котом!</p>
+		<div class="main__program-select">
+			<a class="main__program-link" href="#">
+				подобрать программу
+			</a>
+		</div>
+	</header>
+
+	<section class="page-catalog catalog">
+		<h2 class="visually-hidden">Каталог программ</h2>
+		<div class="catalog__slim">
+			<img class="catalog__slim-image catalog__slim-image--top" src="#" alt="картинка кошки" width="100" height="100">
+			<h3 class="catalog__slim-title">похудение</h3>
+			<p class="catalog__slim-text">Ваш кот весит больше собаки и почти утратил способность
+				лазить по деревьям? Пора на диету! Cat Energy Slim поможет
+				вашему питомцу сбросить лишний вес.</p>
+			<a class="catalog__slim-link" href="#">каталог slim
+				<svg class="catalog__slim-icon" width="24" height="12">
+					<use href="#"></use>
+				</svg>
+			</a>
+			<img class="catalog__slim-image catalog__slim-image--right visually-hidden" src="#" alt="картинка кошки" width="200" height="211">
+		</div>
+		<div class="catalog__pro">
+			<img class="catalog__pro-image catalog__pro-image--top" src="#" alt="картинка кошки" width="100" height="100">
+			<h3 class="catalog__pro-title">набор массы</h3>
+			<p class="catalog__pro-text">Заработать авторитет среди дворовых котов и даже собак?
+				Серия Cat Energy Pro поможет вашему коту нарастить
+				необходимые мышцы!</p>
+			<a class="catalog__pro-link" href="#">каталог pro
+				<svg class="catalog__pro-icon" width="24" height="12">
+					<use href="#"></use>
+				</svg>
+			</a>
+			<img class="catalog__pro-image catalog__pro-image--right visually-hidden" src="#" alt="картинка кошки" width="268" height="112">
+		</div>
+	</section>
+
+	<section class="explonation">
+		<h2 class="explonation__title">
+			Как это работает
+		</h2>
+		<ul class="explonation__list">
+			<li class="explonation__list-item">
+				<svg class="explonation__list-icon" width="80" height="80">
+					<use href="#"></use>
+				</svg>
+				<p class="explonation__list-text">
+					Функциональное питание содержит только полезные питательные вещества.
+				</p>
+			</li>
+			<li class="explonation__list-item">
+				<svg class="explonation__list-icon" width="80" height="80">
+					<use href="#"></use>
+				</svg>
+				<p class="explonation__list-text">
+					Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+				</p>
+			</li>
+			<li class="explonation__list-item">
+				<svg class="explonation__list-icon" width="80" height="80">
+					<use href="#"></use>
+				</svg>
+				<p class="explonation__list-text">
+					Замените один-два приема обычной еды на наше функциональное питание.
+				</p>
+			</li>
+			<li class="explonation__list-item">
+				<svg class="explonation__list-icon" width="80" height="80">
+					<use href="#"></use>
+				</svg>
+				<p class="explonation__list-text">
+					Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+				</p>
+			</li>
+		</ul>
+	</section>
+
+	<section class="example">
+		<div class="example__wrapper">
+			<h2 class="example__title">
+				Живой пример
+			</h2>
+			<p class="example__text">
+				Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+			</p>
+			<div class="example__stats">
+				<div class="example__stats-info stats-info">
+					<p class="stats-info__numbers">
+						5 кг
+					</p>
+					<small class="stats-info__text">
+						снижение веса
+					</small>
+				</div>
+				<div class="example__stats-info stats-info">
+					<p class="stats-info__numbers">
+						60 дней
+					</p>
+					<small class="stats-info__text">
+						затрачено времени
+					</small>
+				</div>
+			</div>
+			<div class="example__stats-price stats-pice">
+				<p class="stats-price__text">
+					затраты на питание:
+				</p>
+				<p class="stats-price-figures">
+					15000 руб.
+				</p>
+			</div>
+		</div>
+		<div class="slider">
+			<div class="slider-items">
+				<img class="slider-items__image" src="#" alt="картинка толстого кота" width="560" height="512">
+				<img class="slider-items__image" src="#" alt="картинка худого кота" width="560" height="512">
+				<svg class="slider-items__icon" width="4" height="512">
+					<use href="#"></use>
+				</svg>
+			</div>
+		</div>
+	</section>
+
+	<section class="cat-energy__address address">
+		<h2 class="visually-hidden">адрес офиса</h2>
+		<div class="address__info">
+			<p class="address__slogan">
+				приглашаем к сотрудничеству дилеров!
+			</p>
+			<address class="address__street">
+				ул. Большая Конюшенная, д. 19/8
+			</address>
+			<address class="address__city">Санкт-Петербург</address>
+		</div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198286!2d30.32047247739608!3d59.93871916209339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1712997181431!5m2!1sru!2sru" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+		</iframe>
+	</section>
+
+	<div class="page-footer footer">
+		<a class="footer__logo" href="#">
+			<img class="page-footer__logo-img" src="#" alt="картинка лого" width="128" height="24">
+		</a>
+		<ul class="footer__social">
+			<li class="footer__social-item">
+				<a class="footer__social-link" href="#">
+					vk
+				</a>
+			</li>
+			<li class="footer__social-item">
+				<a class="footer__social-link" href="https://www.youtube.com/">
+					yt
+				</a>
+			</li>
+			<li class="footer__social-item">
+				<a class="footer__social-link" href="https://web.telegram.org">
+					tg
+				</a>
+			</li>
+		</ul>
+		<ul class="page-footer__copyright copyright">
+			<li class="copyright__item">
+				<a class="copyright__logo" href="https://echo.htmlacademy.ru">
+					HTML ACADEMY
+				</a>
+			</li>
+			<li class="copyright__item">
+				<svg class="copyright__icon" width="27" height="34">
+					<use href="#"></use>
+				</svg>
+			</li>
+		</ul>
+	</div>
+</body>
+
 </html>

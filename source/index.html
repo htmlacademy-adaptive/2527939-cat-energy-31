@@ -6,6 +6,10 @@
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -45,6 +49,11 @@
         <h1 class="hero-title">Функциональное
           питание для котов</h1>
         <p class="hero-slogan">Занялся собой? Займись котом!</p>
+        <picture>
+          <source type="img/png" width="552" height="499" media="(min-width: 1440px)" srcset="images/index-can-desk@1x.png 1x, images/index-can-desk@2x.png 2x">
+          <source type="img/png" width="709" height="609" media="(min-width: 768px)" srcset="images/index-can-tab@1x.png 1x, images/index-can-tab@2x.png 2x">
+          <img class="hero-image" src="images/index-can-mob@1x.png" srcset="images/index-can-mob@2x.png 2x" width="280" height="270" alt="консерва с кормом">
+        </picture>
         <a class="hero-link" href="#">
           подобрать программу
         </a>
@@ -143,8 +152,14 @@
         </div>
         <div class="slider">
           <div class="slider-items">
-            <img class="slider-items__image" src="#" alt="картинка толстого кота" width="560" height="512">
-            <img class="slider-items__image" src="#" alt="картинка худого кота" width="560" height="512">
+            <picture>
+              <source type="img/png" width="560" height="512" media="(min-width: 768px)" srcset="images/slidercat-fat-tab+desk@1x.png 1x, images/slidercat-fat-tab+desk@2x 2x">
+              <img class="slider-items__image" src="images/slidercat-fat-mob@1x.png" srcset="images/slidercat-fat-mob@2x.png 2x" width="280" height="256" alt="картинка толстого кота">
+            </picture>
+            <picture>
+              <source type="img/png" width="560" height="512" media="(min-width: 768px)" srcset="images/slidercat-thin-tab+desk@1x.png 1x, images/slidercat-thin-tab+desk@2x 2x">
+              <img class="slider-items__image" src="images/slidercat-thin-mob@1x.png" srcset="images/slidercat-thin-mob@2x.png 2x" width="280" height="256" alt="картинка худого кота">
+            </picture>
           </div>
         </div>
       </div>

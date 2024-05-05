@@ -1,0 +1,21 @@
+.goods-list__subject-link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.goods-list__features-item {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 14px;
+  color: $base-color-text;
+}
+
+.goods-list__order-link {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #68b738;
+}

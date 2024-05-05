@@ -24,17 +24,17 @@
         </a>
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--active">
-            <a href="index.html">
+            <a class="navigation__item-link" href="index.html">
               Главная
             </a>
           </li>
           <li class="navigation__item">
-            <a href="catalog.html">
+            <a class="navigation__item-link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="navigation__item">
-            <a href="#">
+            <a class="navigation__item-link" href="#">
               Подбор программы
             </a>
           </li>
@@ -63,26 +63,24 @@
     <section class="program">
       <div class="container">
         <h2 class="visually-hidden">Каталог программ</h2>
-        <ul class="program-list">
-          <li class="program-list__item ">
-            <h3 class="program-list__title">похудение</h3>
-            <p class="program-list__text">Ваш кот весит больше собаки и почти утратил способность
+        <ul class="program__list">
+          <li class="program__list-item ">
+            <h3 class="program__list-title">похудение</h3>
+            <p class="program__list-text">Ваш кот весит больше собаки и почти утратил способность
               лазить по деревьям? Пора на диету! Cat Energy Slim поможет
               вашему питомцу сбросить лишний вес.</p>
-            <a class="program-list__link" href="#">
+            <a class="program__list-link" href="#">
               каталог slim
             </a>
           </li>
-          <li class="program-list__item">
-            <h3 class="program-list__title">набор массы</h3>
-            <p class="program-list__text">Заработать авторитет среди дворовых котов и даже собак?
+          <li class="program__list-item">
+            <h3 class="program__list-title">набор массы</h3>
+            <p class="program__list-text">Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить
               необходимые мышцы!</p>
             <a class="program__list-link" href="#">
               каталог slim
             </a>
-          </li>
-          <li class="program__list-item ">
           </li>
         </ul>
       </div>
@@ -126,25 +124,25 @@
         <p class="example__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <ul class="example-list">
-          <li class="example-list__item">
-            <p class="example-list__numbers">
+        <ul class="example__list">
+          <li class="example__list-item">
+            <p class="example__list-numbers">
               5 кг
             </p>
-            <p class="example-list__text">
+            <p class="example__list-text">
               снижение веса
             </p>
           </li>
-          <li class="example-list__item">
-            <p class="example-list__numbers">
+          <li class="example__list-item">
+            <p class="example__list-numbers">
               60 дней
             </p>
-            <p class="example-list__text">
+            <p class="example__list-text">
               затрачено времени
             </p>
           </li>
         </ul>
-        <div class="example__stats-price stats-price">
+        <div class="stats-price">
           <p class="stats-price__text">
             затраты на питание:
           </p>
@@ -159,7 +157,7 @@
               <img class="slider-items__image" src="images/slidercat-fat-mob@1x.png" srcset="images/slidercat-fat-mob@2x.png 2x" width="280" height="256" alt="картинка толстого кота">
             </picture>
             <picture>
-              <source class="slider-items__image-mobdesk" type="img/png" width="560" height="512" media="(min-width: 768px)" srcset="images/slidercat-thin-tab+desk@1x.png 1x, images/slidercat-thin-tab+desk@2x 2x">
+              <source type="img/png" width="560" height="512" media="(min-width: 768px)" srcset="images/slidercat-thin-tab+desk@1x.png 1x, images/slidercat-thin-tab+desk@2x 2x">
               <img class="slider-items__image-mob" src="images/slidercat-thin-mob@1x.png" srcset="images/slidercat-thin-mob@2x.png 2x" width="280" height="256" alt="картинка худого кота">
             </picture>
           </div>

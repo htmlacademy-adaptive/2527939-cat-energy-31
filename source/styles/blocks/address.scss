@@ -1,0 +1,22 @@
+.address__slogan {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.address__street {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  color: $base-color-text;
+}
+
+.address__city {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  color: $base-color-text;
+}

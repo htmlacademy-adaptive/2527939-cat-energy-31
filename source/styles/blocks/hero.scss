@@ -1,0 +1,22 @@
+.hero {
+  background: $bg-basic-green;
+}
+
+.hero__title {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.hero__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero__link {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: $bg-basic-green;
+}

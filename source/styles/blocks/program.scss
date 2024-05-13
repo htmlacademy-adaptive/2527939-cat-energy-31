@@ -1,5 +1,38 @@
 .program__list-item {
   background: $bg-basic-grey;
+  position: relative;
+}
+
+.program__list-item::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #68b738;
+  display: block;
+}
+
+
+.program__list-item--slim::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#cat-slim");
+  position: absolute;
+  background-size: 36px 50px;
+  width: 36px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+
+.program__list-item--pro::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#cat-pro");
+  position: absolute;
+  background-size: 67px 28px;
+  width: 67px;
+  height: 28px;
+  top: 0;
+  left: 0;
 }
 
 .program__list-title {
@@ -18,4 +51,15 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+.program__list-link::after {
+  content: "";
+  mask-image: url("../../icons/stack.svg#arrow");
+  mask-size: 24px 12px;
+  width: 24px;
+  height: 12px;
+  mask-position: 100%;
+  background-color: #000000;
+  display: block;
 }

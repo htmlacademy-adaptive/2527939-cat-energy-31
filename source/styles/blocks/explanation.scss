@@ -3,6 +3,43 @@
   line-height: 40px;
 }
 
+.explanation__list-item::before {
+  content: "";
+  background-color: #68b738;
+  display: block;
+  background-size: 30px 32px;
+  width: 60px;
+  height: 60px;
+}
+
+.explanation__list-item--benefit::before {
+  background-image: url("../../icons/stack.svg#icon_leaf");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 32px;
+}
+
+.explanation__list-item--practical::before {
+  background-image: url("../../icons/stack.svg#icon_water");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 32px;
+}
+
+.explanation__list-item--replace::before {
+  background-image: url("../../icons/stack.svg#icon_eat");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 32px;
+}
+
+.explanation__list-item--time::before {
+  background-image: url("../../icons/stack.svg#icon_watch");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 32px;
+}
+
 .explanation__list-text {
   font-family: $font-secondary;
   font-size: 14px;

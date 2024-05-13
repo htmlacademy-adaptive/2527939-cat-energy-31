@@ -1,6 +1,16 @@
-.footer__copyright-text {
+.footer__copyright {
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
   color: $base-color-text;
+}
+
+.footer__copyright::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#html_logo_footer");
+  background-size: 27px 34px;
+  width: 27px;
+  height: 34px;
+  background-repeat: no-repeat;
+  display: block;
 }

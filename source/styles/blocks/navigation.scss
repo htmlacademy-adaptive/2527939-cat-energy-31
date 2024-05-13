@@ -6,3 +6,12 @@
 .navigation__item-link {
   color: #000000;
 }
+
+.navigation__toggle {
+  background-image: url("../../icons/stack.svg#burger_menu");
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: #ffffff;
+}

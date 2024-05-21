@@ -1,3 +1,17 @@
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px 0;
+  width: 280px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .social__link {
   width: 28px;
   height: 28px;

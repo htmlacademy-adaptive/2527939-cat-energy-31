@@ -1,6 +1,14 @@
+.address__info {
+  display: flex;
+  gap: 10px;
+  min-height: 60px;
+  padding: 26px 20px;
+}
+
 .address__slogan {
   font-size: 16px;
   line-height: 20px;
+  width: 140px;
   text-transform: uppercase;
   color: #111111;
 }
@@ -9,14 +17,7 @@
   font-family: $font-secondary;
   font-size: 14px;
   line-height: 20px;
-  font-style: normal;
-  color: $base-color-text;
-}
-
-.address__city {
-  font-family: $font-secondary;
-  font-size: 14px;
-  line-height: 20px;
+  width: 145px;
   font-style: normal;
   color: $base-color-text;
 }

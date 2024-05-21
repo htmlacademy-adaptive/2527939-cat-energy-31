@@ -123,66 +123,61 @@
     </section>
 
     <section class="example">
-      <div class="container">
+      <div class="container example__container">
         <h2 class="example__title">
           Живой пример
         </h2>
         <p class="example__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <ul class="example__list">
-          <li class="example__list-item">
-            <p class="example__list-numbers">
-              5 кг
+        <div class="example__wrapper">
+          <ul class="example__list">
+            <li class="example__list-item">
+              <p class="example__list-numbers">
+                5 кг
+              </p>
+              <p class="example__list-text">
+                снижение веса
+              </p>
+            </li>
+            <li class="example__list-item">
+              <p class="example__list-numbers">
+                60 дней
+              </p>
+              <p class="example__list-text">
+                затрачено времени
+              </p>
+            </li>
+          </ul>
+          <div class="stats-price">
+            <p class="stats-price__text">
+              затраты на питание:
             </p>
-            <p class="example__list-text">
-              снижение веса
+            <p class="stats-price__figures">
+              15 000 руб.
             </p>
-          </li>
-          <li class="example__list-item">
-            <p class="example__list-numbers">
-              60 дней
-            </p>
-            <p class="example__list-text">
-              затрачено времени
-            </p>
-          </li>
-        </ul>
-        <div class="stats-price">
-          <p class="stats-price__text">
-            затраты на питание:
-          </p>
-          <p class="stats-price__figures">
-            15000 руб.
-          </p>
-        </div>
-        <div class="slider">
-          <div class="slider__items">
-            <picture>
-              <source type="img/png" width="560" height="512" media="(min-width: 768px)" srcset="images/slidercat-fat-tab+desk@1x.png 1x, images/slidercat-fat-tab+desk@2x 2x">
-              <img class="slider__image" src="images/slidercat-fat-mob@1x.png" srcset="images/slidercat-fat-mob@2x.png 2x" width="280" height="256" alt="картинка толстого кота">
-            </picture>
-            <picture>
-              <source type="img/png" width="560" height="512" media="(min-width: 768px)" srcset="images/slidercat-thin-tab+desk@1x.png 1x, images/slidercat-thin-tab+desk@2x 2x">
-              <img class="slider__image-mob" src="images/slidercat-thin-mob@1x.png" srcset="images/slidercat-thin-mob@2x.png 2x" width="280" height="256" alt="картинка худого кота">
-            </picture>
-            <button class="slider__button" type="button">
-              <span class="visually-hidden">ползунок слайдера</span>
-            </button>
           </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="slider__items">
+          <picture>
+            <source type="img/png" width="560" height="512" media="(min-width: 768px)" srcset="images/slidercat-fat-tab+desk@1x.png 1x, images/slidercat-fat-tab+desk@2x 2x">
+            <img class="slider__image" src="images/slidercat-fat-mob@1x.png" srcset="images/slidercat-fat-mob@2x.png 2x" width="280" height="256" alt="картинка толстого кота">
+          </picture>
+          <picture>
+            <source type="img/png" width="560" height="512" media="(min-width: 768px)" srcset="images/slidercat-thin-tab+desk@1x.png 1x, images/slidercat-thin-tab+desk@2x 2x">
+            <img class="slider__image-mob" src="images/slidercat-thin-mob@1x.png" srcset="images/slidercat-thin-mob@2x.png 2x" width="280" height="256" alt="картинка худого кота">
+          </picture>
+          <button class="slider__button" type="button">
+            <span class="visually-hidden">ползунок слайдера</span>
+          </button>
         </div>
       </div>
     </section>
 
     <section class="address">
       <h2 class="visually-hidden">адрес офиса</h2>
-      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198286!2d30.32047247739608!3d59.93871916209339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1712997181431!5m2!1sru!2sru" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe> -->
-      <picture>
-        <source type="image/png" width="1440" height="400" media="(min-width: 1440px)" srcset="images/map-desk@1x.png 1x, images/map-desk@1x.png 2x">
-        <source type="image/png" width="768" height="400" media="(min-width: 768px)" srcset="images/map-tab@1x.png 1x, images/map-tab@2x.png 2x">
-        <img class="address__map-mob" src="images/map-mob@1x.png" srcset="images/map-mob@2x.png 2x" width="320" height="362" alt="карта с адресом офиса">
-      </picture>
       <div class="cotainer">
         <div class="address__info">
           <p class="address__slogan">
@@ -190,15 +185,22 @@
           </p>
           <address class="address__street">
             ул. Большая Конюшенная, д. 19/8
+            Санкт-Петербург
           </address>
-          <address class="address__city">Санкт-Петербург</address>
         </div>
       </div>
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198286!2d30.32047247739608!3d59.93871916209339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1712997181431!5m2!1sru!2sru" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe> -->
+      <picture>
+        <source type="image/png" width="1440" height="400" media="(min-width: 1440px)" srcset="images/map-desk@1x.png 1x, images/map-desk@1x.png 2x">
+        <source type="image/png" width="768" height="400" media="(min-width: 768px)" srcset="images/map-tab@1x.png 1x, images/map-tab@2x.png 2x">
+        <img class="address__map-mob" src="images/map-mob@1x.png" srcset="images/map-mob@2x.png 2x" width="320" height="362" alt="карта с адресом офиса">
+      </picture>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container footer__container">
       <a class="logo" href="#">
         <img class="logo-text" src="images/logo-text.svg" width="128" height="24" alt="Товарный знак компании Cat Energy">
       </a>

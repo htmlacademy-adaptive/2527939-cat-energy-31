@@ -1,27 +1,100 @@
 .example {
   background: #eaeaea;
+  padding: 25px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 45px 30px 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    padding: 69px 110px 85px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 
 .example__title {
+  padding-bottom: 40px;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }
 
 .example__text {
+  padding-bottom: 20px;
   font-family: $font-secondary;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 433px;
+    padding-bottom: 69px;
+  }
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  gap: 5px;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
+}
+
+.example__list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
 }
 
 .example__list-numbers {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .example__list-text {
+  text-align: center;
   font-family: $font-secondary;
   font-size: 12px;
   line-height: 12px;
+  width: 77px;
   color: $base-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
 }

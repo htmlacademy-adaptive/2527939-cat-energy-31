@@ -1,18 +1,109 @@
-.cards-list__item-link {
-  font-size: 16px;
-  line-height: 20px;
-  color: #222222;
+.cards-list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
+  }
 }
 
-.cards-list__item-weight {
+.cards-list__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 25px;
+  border-top: $border-line;
+  border-bottom: $border-line;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 324px;
+    background-color: $bg-basic-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.cards-list__item-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 107px;
+}
+
+.cards-list__item-info {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.cards-list__item-link {
+  display: block;
+  padding-bottom: 14px;
+  width: 76px;
   font-size: 16px;
   line-height: 20px;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    width: 135px;
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 .cards-list__item-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 21px;
+  width: 140px;
   font-family: $font-secondary;
   font-size: 12px;
   line-height: 16px;
   color: $base-color-text;
+
+  @media (min-width: $tablet-width) {
+    gap: 11px 80px;
+    width: 250px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    gap: 10px 75px;
+  }
+}
+
+.cards-list__order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $bg-basic-green;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }

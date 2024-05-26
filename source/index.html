@@ -16,7 +16,7 @@
 <body class="page__body">
   <header class="header">
     <div class="container">
-      <nav class="navigation">
+      <div class="navigation__wrapper">
         <a class="navigation__logo" href="#">
           <picture>
             <source media="(min-width: 1440px)" srcset="images/logo-desk.svg" width="70" height="59" type="image/svg+xml">
@@ -25,27 +25,31 @@
           </picture>
           <img class="navigation__logo-text" src="images/logo-text.svg" width="101" height="20" alt="Товарный знак компании Cat Energy">
         </a>
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--active">
-            <a class="navigation__item-link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__item-link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__item-link" href="#">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="navigation navigation--closed">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__item-link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__item-link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__item-link" href="#">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
     </div>
   </header>
 

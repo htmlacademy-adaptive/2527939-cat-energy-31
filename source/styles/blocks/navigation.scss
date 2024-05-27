@@ -23,7 +23,7 @@
   justify-content: space-between;
   align-items: center;
   min-width: 100%;
-  min-height: 199px;
+  min-height: fit-content;
   font-family: $font-primary;
   font-size: 20px;
   background-color: #ffffff;
@@ -48,6 +48,7 @@
   min-height: 199px;
   text-align: center;
   text-transform: uppercase;
+  display: none;
 
   @media (min-width: $tablet-width) {
     display: flex;

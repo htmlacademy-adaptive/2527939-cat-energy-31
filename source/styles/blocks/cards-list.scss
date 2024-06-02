@@ -215,6 +215,14 @@
   color: #ffffff;
   background-color: $bg-basic-green;
 
+  &:hover {
+    background: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     width: 250px;
   }

@@ -6,12 +6,13 @@
 
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
-    padding: 26px 38px 28px;
+    margin-bottom: 70px;
     border: $border-line;
   }
 
   @media (min-width: $desktop-width) {
     flex-flow: row wrap;
+    margin-bottom: 0;
     padding: 0;
     width: 898px;
     border: none;
@@ -52,8 +53,8 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    width: 632px;
-    border-bottom: none;
+    padding: 26px 38px 27px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -108,6 +109,14 @@
   text-transform: uppercase;
   color: #ffffff;
   background: #68b738;
+
+  &:hover {
+    background: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 
   @media (min-width: $desktop-width) {
     width: 244px;

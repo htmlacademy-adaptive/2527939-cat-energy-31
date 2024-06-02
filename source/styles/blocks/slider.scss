@@ -79,30 +79,55 @@
   border-radius: 2px;
   border: none;
   cursor: pointer;
-}
 
-.slider__button::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  border: solid 2px #666666;
-}
+  &:hover {
+    background: #68b738;
+  }
 
-.slider__button::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 24px;
-  height: 18px;
-  mask-image: url("../../icons/stack.svg#slider-arrows");
-  mask-position: 50%;
-  background-color: #666666;
+  &:active {
+    background: #c5e0b4;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: solid 2px #666666;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 18px;
+    mask-image: url("../../icons/stack.svg#slider-arrows");
+    mask-position: 50%;
+    background-color: #666666;
+  }
+
+  &:hover::after {
+    background: #68b738;
+  }
+
+  &:active::after {
+    background: #c5e0b4;
+  }
+
+  &:hover::before {
+    border: 2px solid #68b738;
+  }
+
+  &:active::before {
+    border: 2px solid #c5e0b4;
+  }
 }

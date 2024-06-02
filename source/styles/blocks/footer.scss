@@ -1,5 +1,15 @@
 .footer {
   padding: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 30px;
+    min-height: 147px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 110px;
+    min-height: 169px;
+  }
 }
 
 .footer__container {
@@ -38,5 +48,6 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
     gap: 23px;
+    width: fit-content;
   }
 }

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 27px 0 0;
   text-align: center;
 
   @media (max-width: $mobile-width-only) {
@@ -10,21 +11,35 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 810px;
+    padding-left: 90px;
+    min-height: 810px;
+    text-align: start;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    margin-bottom: 82px;
+    padding-left: 190px;
+    min-height: 500px;
+  }
+}
+
+.hero__container {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin: 0 auto;
+    min-height: 499px;
   }
 }
 
 .hero__title {
-  padding: 27px 0 25px;
+  margin-bottom: 25px;
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
     font-size: 60px;
     line-height: 60px;
     width: 416px;
@@ -33,7 +48,7 @@
 }
 
 .hero__slogan {
-  padding-bottom: 25px;
+  margin-bottom: 25px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -46,12 +61,49 @@
   }
 }
 
+.hero__wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
+}
+
 .hero__link {
   display: block;
   padding: 10px 0;
   font-size: 16px;
-  min-width: 280px;
+  width: 280px;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   background: $bg-basic-green;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 244px;
+    height: 50px;
+    z-index: 2;
+  }
+}
+
+.hero__image-mob {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: -90px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -81px;
+    left: 352px;
+    width: 552px;
+  }
 }

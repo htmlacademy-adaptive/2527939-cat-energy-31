@@ -1,0 +1,126 @@
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
+  }
+}
+
+.subscribe__title {
+  position: relative;
+  margin-bottom: 32px;
+  align-self: flex-start;
+  margin-left: 20px;
+  font-size: 24px;
+  background: #ffffff;
+  line-height: 24px;
+  width: fit-content;
+  box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100vw;
+    height: 2px;
+    background: #68b738;
+    box-shadow: 100vw 0 0 0 #68b738;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 70px;
+    margin-bottom: 66px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 72px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.subscribe__text {
+  margin-bottom: 24px;
+  width: 280px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 24px;
+    width: 632px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: fit-content;
+  }
+}
+
+.subscribe__email-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+  }
+}
+
+.subscribe__email-input {
+  padding: 13px;
+  margin-bottom: 16px;
+  width: 280px;
+  height: 56px;
+  font-family: $font-primary;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #444444;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
+}
+
+.subscribe__email-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  font-family: $font-primary;
+  height: 56px;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  background: #68b738;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
+}

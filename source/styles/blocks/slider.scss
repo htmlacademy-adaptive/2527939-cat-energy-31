@@ -1,14 +1,33 @@
+.slider {
+  @media (min-width: $tablet-width) {
+    background: #eaeaea;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(#ffffff 30.2%, #f2f2f2 0%);
+    height: 512px;
+  }
+}
+
 .slider__items {
   position: relative;
   display: flex;
   overflow: hidden;
-  margin: 0 auto;
   width: 280px;
   height: 256px;
 
   @media (min-width: $tablet-width) {
     width: 580px;
     height: 512px;
+    top: -150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
   }
 }
 
@@ -24,6 +43,10 @@
     height: 516px;
     clip-path: inset(0 290px 0 0);
   }
+
+  @media (min-width: $desktop-width) {
+    height: 512px;
+  }
 }
 
 .slider__image-mob--slim {
@@ -37,6 +60,10 @@
     width: 580px;
     height: 516px;
     clip-path: inset(0 0 0 290px);
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 512px;
   }
 }
 

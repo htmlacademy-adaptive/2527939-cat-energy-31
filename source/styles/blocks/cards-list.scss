@@ -4,11 +4,26 @@
 
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
-    gap: 60px;
+    gap: 141px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 80px;
+    gap: 144px 80px;
+  }
+}
+
+.cards-list__item-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 250px;
+    min-height: 292px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
   }
 }
 
@@ -19,14 +34,28 @@
   align-items: center;
   padding: 20px 20px 25px;
   border-top: $border-line;
-  border-bottom: $border-line;
+
+  &:last-child {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: $border-line;
+
+    @media (min-width: $tablet-width) {
+      justify-content: flex-end;
+      border: $border-line;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 37px 40px;
     width: 324px;
+    min-height: 430px;
     background-color: $bg-basic-grey;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,12 +63,40 @@
   }
 }
 
-.cards-list__item-pic {
+.cards-list__item--add-cards {
+  background: url("../../icons/stack.svg#icon_plus");
+  background-size: 30px 30px;
+  background-position: center 25px;
+  background-repeat: no-repeat;
+  min-height: 210px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: 60px 60px;
+    background-position: center 50px;
+    min-height: 429px;
+    text-align: center;
+  }
+}
+
+.cards-list__item-image {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 140px;
   height: 107px;
+  padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -52px;
+    margin-bottom: -52px;
+    padding: 0;
+    width: 161px;
+    height: 171px;
+  }
 }
 
 .cards-list__item-info {
@@ -47,6 +104,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+.cards-list__item-title--add-cards {
+  padding: 23px 0 8px;
+  text-transform: uppercase;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 134px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 23px;
   }
 }
 
@@ -65,10 +135,26 @@
   }
 }
 
+.cards-list__item-text {
+  margin-bottom: 21px;
+  font-family: $font-secondary;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+    padding-bottom: 82px;
+  }
+}
+
 .cards-list__item-description {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 0 69px;
   margin-bottom: 21px;
   width: 140px;
   font-family: $font-secondary;
@@ -77,7 +163,7 @@
   color: $base-color-text;
 
   @media (min-width: $tablet-width) {
-    gap: 11px 80px;
+    gap: 12px 80px;
     width: 250px;
     font-size: 16px;
   }
@@ -85,6 +171,36 @@
   @media (min-width: $desktop-width) {
     width: 169px;
     gap: 10px 75px;
+  }
+}
+
+.cards-list__item-term {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 250px;
+      height: 1px;
+      background-color: #cdcdcd;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 169px;
+      height: 1px;
+      background-color: #cdcdcd;
+    }
   }
 }
 
@@ -106,4 +222,19 @@
   @media (min-width: $desktop-width) {
     width: 169px;
   }
+}
+
+.cards-list__item-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-primary;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  height: 40px;
+  text-transform: uppercase;
+  color: $base-color-text;
+  background: #f2f2f2;
+  border: none;
 }

@@ -1,5 +1,15 @@
 .footer {
   padding: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 30px;
+    min-height: 147px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+    min-height: 169px;
+  }
 }
 
 .footer__container {
@@ -25,18 +35,32 @@
   line-height: 20px;
   color: $base-color-text;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
-    background-image: url("../../icons/stack.svg#html_logo_footer");
-    background-size: 27px 34px;
+    display: block;
+    mask-image: url("../../icons/stack.svg#html_logo_footer");
+    mask-size: 27px 34px;
     width: 27px;
     height: 34px;
-    background-repeat: no-repeat;
-    display: block;
+    mask-repeat: no-repeat;
+    background-color: #666666;
+  }
+
+  &:hover::after {
+    background-color: #68b738;
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
     gap: 23px;
+    width: fit-content;
   }
 }

@@ -153,19 +153,28 @@
   text-transform: uppercase;
   border-top: 1px solid #d9d9d9;
 
+  &::after {
+    content: "";
+    mask-image: url("../../icons/stack.svg#arrow");
+    mask-size: 35px 12px;
+    mask-repeat: no-repeat;
+    width: 35px;
+    height: 12px;
+    mask-position: -8px 100%;
+    background-color: #000000;
+    display: block;
+  }
+
+  &:hover::after {
+    mask-position: 0 100%;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     border: none;
     font-size: 20px;
   }
-}
-
-.program__list-link::after {
-  content: "";
-  mask-image: url("../../icons/stack.svg#arrow");
-  mask-size: 24px 12px;
-  width: 24px;
-  height: 12px;
-  mask-position: 100%;
-  background-color: #000000;
-  display: block;
 }

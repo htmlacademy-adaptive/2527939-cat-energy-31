@@ -1,22 +1,62 @@
 .present {
-  background: url("../../images/gift__bg-mob@1x.jpg") center/cover;
-  background-color: $bg-basic-green;
-  opacity: 0.85;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 40px;
+  padding: 0 60px 43px;
+  text-align: center;
+  background: url("../../images/present_bg_mob@2x.png") center/cover;
   height: 290px;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 57px 125px 60px 77px;
+    background: url("../../images/present_bg_tab@2x.png") center/cover;
+    height: 200px;
+    width: 707px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 42px 43px;
+    margin: 0;
+    background: url("../../images/present_bg_desk@2x.png") center/cover;
+    height: 288px;
+    width: 245px;
+    text-align: center;
+  }
 }
 
 .present__text {
+  align-self: flex-end;
+  width: 169px;
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    align-self: auto;
+  }
 }
 
-.present__text::before {
+.present::before {
   content: "";
+  position: absolute;
   background-image: url("../../icons/stack.svg#icon_gift");
   width: 80px;
   height: 80px;
+  top: 59;
+  left: center;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    left: 77px;
+    top: 57px;
+  }
 }

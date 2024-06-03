@@ -9,12 +9,21 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    width: fit-content;
   }
 }
 
 .social__link {
   width: 28px;
   height: 28px;
+
+  &:hover::before {
+    background-color: #68b738;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .social__link--vkontakte {

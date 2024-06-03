@@ -1,0 +1,28 @@
+.catalog {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.catalog__container {
+  min-width: 320px;
+}
+
+.catalog__title {
+  margin-bottom: 41px;
+  padding-top: 27px;
+  font-size: 36px;
+  line-height: 36px;
+  border-top: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 165px;
+    border: none;
+  }
+}

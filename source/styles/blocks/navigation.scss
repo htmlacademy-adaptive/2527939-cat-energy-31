@@ -25,6 +25,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
   min-width: 100%;
   min-height: fit-content;
   font-family: $font-primary;
@@ -42,7 +43,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: 475px;
-    height: 40px;
+    min-height: 40px;
   }
 }
 
@@ -221,4 +222,8 @@
 
 .navigation--opened .navigation__list {
   display: block;
+}
+
+.navigation--no-js .navigation-toggle {
+  display: none;
 }

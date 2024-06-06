@@ -1,6 +1,8 @@
 const navMain = document.querySelector('.navigation');
 const navToggle = document.querySelector('.navigation__toggle');
 
+navMain.classList.remove('navigation--no-js');
+
 navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('navigation--closed')) {
     navMain.classList.remove('navigation--closed');

@@ -13,13 +13,13 @@
 .explanation__title {
   font-size: 36px;
   line-height: 40px;
-  padding-bottom: 40px;
 }
 
 .explanation__list {
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
+  counter-reset: number;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -46,10 +46,12 @@
 }
 
 .explanation__list-item {
+  position: relative;
   display: flex;
   gap: 20px;
   padding-top: 40px;
   width: 280px;
+  counter-increment: number;
 
   &::before {
     content: "";
@@ -63,6 +65,19 @@
       background-size: 80px 80px;
       width: 80px;
       height: 80px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(number);
+      position: absolute;
+      font-size: 280px;
+      font-family: $font-primary;
+      color: #f2f2f2;
+      top: -70;
+      right: 0;
+      z-index: -1;
     }
   }
 
@@ -83,12 +98,12 @@
     background-size: 30px 32px;
   }
 
-  @media (min-width: $tablet-width) {
-    background-image: url("../../icons/stack.svg#number_one");
-    background-repeat: no-repeat;
-    background-position: right 40px;
-    background-size: 112px 280px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   background-image: url("../../icons/stack.svg#number_one");
+  //   background-repeat: no-repeat;
+  //   background-position: right 40px;
+  //   background-size: 112px 280px;
+  // }
 }
 
 .explanation__list-item--practical {
@@ -99,12 +114,12 @@
     background-size: 30px 32px;
   }
 
-  @media (min-width: $tablet-width) {
-    background-image: url("../../icons/stack.svg#number_two");
-    background-repeat: no-repeat;
-    background-position: right 40px;
-    background-size: 134px 239px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   background-image: url("../../icons/stack.svg#number_two");
+  //   background-repeat: no-repeat;
+  //   background-position: right 40px;
+  //   background-size: 134px 239px;
+  // }
 }
 
 .explanation__list-item--replace {
@@ -115,12 +130,12 @@
     background-size: 30px 32px;
   }
 
-  @media (min-width: $tablet-width) {
-    background-image: url("../../icons/stack.svg#number_three");
-    background-repeat: no-repeat;
-    background-position: right 40px;
-    background-size: 134px 235px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   background-image: url("../../icons/stack.svg#number_three");
+  //   background-repeat: no-repeat;
+  //   background-position: right 40px;
+  //   background-size: 134px 235px;
+  // }
 }
 
 .explanation__list-item--time {
@@ -131,10 +146,10 @@
     background-size: 30px 32px;
   }
 
-  @media (min-width: $tablet-width) {
-    background-image: url("../../icons/stack.svg#number_four");
-    background-repeat: no-repeat;
-    background-position: right 40px;
-    background-size: 136px 225px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   background-image: url("../../icons/stack.svg#number_four");
+  //   background-repeat: no-repeat;
+  //   background-position: right 40px;
+  //   background-size: 136px 225px;
+  // }
 }

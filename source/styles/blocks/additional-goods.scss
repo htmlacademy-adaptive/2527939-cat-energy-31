@@ -4,6 +4,15 @@
   align-items: center;
   margin-bottom: 40px;
   min-height: 904px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 408px;
+    margin-bottom: 96px;
+  }
 }
 
 .additional-goods__title {
@@ -12,7 +21,6 @@
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 36px;
-  margin-left: 20px;
   background-color: #ffffff;
   width: fit-content;
   box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
@@ -30,7 +38,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 70px;
+    margin-left: 40px;
     margin-bottom: 66px;
     font-size: 32px;
     line-height: 32px;

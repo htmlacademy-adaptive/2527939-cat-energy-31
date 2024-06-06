@@ -1,5 +1,5 @@
 .navigation-wrapper {
-  height: 38px;
+  min-height: 38px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -34,11 +34,11 @@
 
 
   @media (min-width: $tablet-width) {
-    background-color: transparent;
     position: static;
     flex-direction: row;
     min-width: 436px;
     min-height: 55px;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,7 +48,6 @@
 }
 
 .navigation__list {
-
   min-width: 100%;
   min-height: 199px;
   text-align: center;
@@ -58,17 +57,19 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     min-height: 60px;
-    width: 100%;
+    width: 436px;
     gap: 33px;
     font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    display: contents;
+    display: flex;
+    width: 478px;
+    gap: 30px;
     font-size: 20px;
-    background-color: rgba(100, 168, 60, 1);
   }
 }
 
@@ -221,9 +222,23 @@
 }
 
 .navigation--opened .navigation__list {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
+}
+
+.navigation--no-js .navigation__toggle {
+  display: none;
+}
+
+.navigation--no-js,
+.navigation--no-js .navigation {
+  position: static;
   display: block;
 }
 
-.navigation--no-js .navigation-toggle {
-  display: none;
+.navigation--no-js,
+.navigation--no-js .navigation__list {
+  display: block;
+  position: static;
 }
